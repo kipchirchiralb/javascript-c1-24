@@ -25,7 +25,7 @@ let car = {
   model: "vitz",
   yom: 2014,
 };
-let color = ["yellow", "red", "blue"];
+let color = ["yellow", "red", "blue",90, {}];
 function dance() {
   console.log("jhkbsckvjks;mkv");
   console.log("jhkbsckvjks;mkv");

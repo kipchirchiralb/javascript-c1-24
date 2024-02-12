@@ -1,6 +1,5 @@
 //  a js object - a data type used to store collections of data and functionality.
-// we can create objects using {} , Object() constructor function or using Object.create() method
-
+// we can create objects using(object literals) {} , Object() constructor function or using Object.create() method
 const user = {
   name: "albert",
   age: 28,
