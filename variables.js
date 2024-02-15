@@ -2,6 +2,8 @@
 
 // with js there are 3 ways to store variable :- using the var,let or const keywords with an assignment operator
 
+// why var is no longer used alot
+
 var age = 40;
 
 let username = "Albert Kipchirchir";

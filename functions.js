@@ -7,9 +7,15 @@ function whatItDoes() {
 }
 // defining a function -- with  argument/arguments(data:- array,string,number,boolean, function )
 function getAge(yob) {
+  // obj.userna
+  // call
   let age = 2024 - yob;
   console.log("You are " + age + " years old");
 }
+getAge(2000);
+getAge(2005);
+getAge(1960);
+
 function squareNumber(x, user) {
   console.log("hello " + user);
   console.log("The square of " + x + " is " + x * x);

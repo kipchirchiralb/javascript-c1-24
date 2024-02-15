@@ -28,8 +28,6 @@ console.log(typeof user.isKenyan); // boolean
 user.calculateAge(2003)
 // a funtion inside an object is called a method for that object
 
-
-
 // using bracket notation
 console.log(user["favColor"]);
 console.log(user["fav place"]); // nakuru
