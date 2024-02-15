@@ -10,8 +10,11 @@ function two(cbf) {
 }
 two(one);
 
-//  assync -- run intensive operations -- .then syntax , async ..await (Promises)
+console.log("hello there");
 
-// the function that is passed into aother function as an argument is called a callback function
+//  assync -- run intensive operations -- .then syntax , async ..await (Promises)
+// blocking vs non-blocking
+
+// the function that is passed into another function as an argument is called a callback function
 
 //callback hell

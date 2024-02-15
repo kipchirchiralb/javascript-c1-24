@@ -1,5 +1,13 @@
-const newArr = [3, 5, 24, 5];
+if (10 > 90) {
+  console.log("condition true");
+} else {
+  console.log("condition false");
+}
 
-const secVar = new Array(2, 3, 43, 5, 54);
+// not !
 
-console.log(secVar);
+if (!true) {
+  console.log("its true");
+} else {
+  console.log("its not true(false)");
+}
