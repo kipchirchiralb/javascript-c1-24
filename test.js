@@ -11,3 +11,11 @@ if (!true) {
 } else {
   console.log("its not true(false)");
 }
+
+function greet() {
+  console.log("Hello!");
+}
+
+console.log(greet.toString()); // Outputs the string representation of the function
+console.log("**");
+console.log(greet.call()); // Outputs the string representation of the function

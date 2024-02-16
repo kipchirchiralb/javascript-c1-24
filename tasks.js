@@ -55,4 +55,62 @@ removeDuplicates(namesArray);
 removeDuplicates(["albert", "Albert"]);
 // 3. Reverse string: Write a function that takes a string as an argument and returns the string reversed. You can use string methods such as split(), reverse(), and join() to accomplish this task.
 
+// albert  -- > trebla
+// split() -- make an array out of the string e.g. ["a","l","b","e","r","t"]
+// reverse() -- reverse the array ["t","r","e","b","l","a"]
+// join() - to convert the new array into a string "trebla"
+let sampleString = "albert";
+const reverseString = (word) => {
+  // let letterArray = word.split("");
+  // let reversedArray = letterArray.reverse();
+  // let final = reversedArray.join("");
+  // return final;
+  return word.split("").reverse().join("");
+};
+
+let res = reverseString(sampleString);
+console.log(reverseString("hello world").toUpperCase().charAt(0)); // method chaining
+
+console.log(res);
+
 // 4. Longest word in a string: Write a function that takes a sentence as an argument and returns the longest word in the sentence. You can use string methods such as split(), and length to accomplish this task.
+
+/**
+ * 1. convert the sentence into an array
+ * 2. create a logestWord Variable (null)
+ * 3. loop through the array checking the length of each word and compare to the length of the longest word
+ * 4. if it is longer, then replace the longest word esle skip that word
+ * 5. return the longest word afte the loop ends
+ */
+let sentence =
+  "Hello world. My name is Developer Erick Kigen (eriko). I am a software Developer!";
+
+function getLongestWord(sen) {
+  let words = sen.split(" ");
+  let longestWord = "";
+  words.forEach(function (word) {
+    // clean the word-- remove any symbols
+    word = cleanWord(word);
+    if (word.length > longestWord.length) {
+      longestWord = word;
+    }
+  });
+  return longestWord;
+}
+
+function cleanWord(word) {
+  if (word.endsWith(".")) {
+    word = word.slice(0, word.length - 1);
+  }
+  if (word.endsWith("!")) {
+    word = word.slice(0, word.length - 1);
+  }
+  if (word.endsWith(")")) {
+    word = word.slice(0, word.length - 1);
+  }
+  if (word.startsWith("(")) {
+    word = word.slice(1, word.length);
+  }
+  return word;
+}
+console.log(getLongestWord(sentence));
